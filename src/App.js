@@ -1,23 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.gif";
+import image from "./image.png";
+import Vector from "./Vector.png";
+import "./App.css";
+import { useState } from "react";
 
 function App() {
+  const [isGif, setIsGif] = useState(false);
+
+  const handleGif = () => {
+    isGif ? setIsGif(false) : setIsGif(true);
+  };
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="App-logo">
+        <button className="Button-sofa" onClick={handleGif}>
+          <img src={Vector} alt="360" />
+        </button>
+        {isGif ? (
+          <img src={logo} className="sofa-gif" alt="logo" />
+        ) : (
+          <img src={image} className="sofa" alt="logo" />
+        )}
+      </div>
+      <div className="info">
+        <p className="Codigo">CÓDIGO 42404</p>
+        <p className="Titulo">Sofá Margot II - Rosé</p>
+        <p className="Preco">R$ 4.000</p>
+        <button className="Button">ADICIONAR À CESTA</button>
+      </div>
     </div>
   );
 }
