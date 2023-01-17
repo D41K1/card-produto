@@ -125,6 +125,7 @@
   font-size: 20px;
   line-height: 32px;
   background-color: #d9cdf7;
+  transition: all 0.3s;
 }
 
 .Button:hover {
