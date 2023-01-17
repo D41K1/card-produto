@@ -34,8 +34,22 @@
   cursor: pointer;
 }
 
+.Close-sofa {
+  width: auto;
+  background-color: #d9cdf7;
+  display: flex;
+  align-items: flex-end;
+  margin-left: 98%;
+  margin-bottom: 0px;
+  border: 0;
+}
+
+.Close-sofa:hover {
+  cursor: pointer;
+}
+
 .sofa-gif {
-  width: 120%;
+  width: 115%;
   display: flex;
   flex-direction: column;
   justify-content: center;
