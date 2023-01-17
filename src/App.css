@@ -16,7 +16,7 @@
   width: 50%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: flex-start;
 }
 
@@ -35,11 +35,12 @@
 }
 
 .Close-sofa {
-  width: auto;
+  max-height: 66px;
+  max-width: 66px;
   background-color: #d9cdf7;
   display: flex;
   align-items: flex-end;
-  margin-left: 98%;
+  margin-left: 90%;
   margin-bottom: 0px;
   border: 0;
 }
@@ -48,12 +49,26 @@
   cursor: pointer;
 }
 
+.sofa {
+  width: 100%;
+}
+
 .sofa-gif {
-  width: 115%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
+}
+
+.Click-360 {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
 }
 
 .info {

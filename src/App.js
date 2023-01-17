@@ -26,9 +26,13 @@ function App() {
         )}
 
         {isGif ? (
-          <img src={logo} className="sofa-gif" alt="logo" />
+          <button className="Click-360" onClick={handleGif}>
+            <img src={logo} className="sofa-gif" alt="logo" />
+          </button>
         ) : (
-          <img src={image} className="sofa" alt="logo" />
+          <button className="Click-360" onClick={handleGif}>
+            <img src={image} className="sofa" alt="logo" />
+          </button>
         )}
       </div>
       <div className="info">
