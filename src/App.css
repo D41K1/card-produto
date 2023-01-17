@@ -13,6 +13,7 @@
 }
 
 .App-logo {
+  max-width: unset !important;
   width: 50%;
   display: flex;
   flex-direction: column;
@@ -99,6 +100,7 @@
   font-size: 64px;
   line-height: 100%;
   margin-bottom: 20px;
+  text-align: left;
 }
 
 .Preco {
@@ -129,4 +131,42 @@
   background-color: #9975f3;
   cursor: pointer;
   color: white;
+}
+
+@media (max-width: 1024px) {
+  .Codigo,
+  .Button {
+    font-size: 14px;
+  }
+  .Titulo {
+    font-size: 32px;
+  }
+  .Preco {
+    font-size: 20px;
+  }
+  .Button {
+    padding: 4px 8px;
+  }
+  .App {
+    flex-direction: column;
+  }
+  .App-logo {
+    width: 100%;
+    max-width: 650px !important;
+  }
+  .Close-sofa {
+    margin-left: 80%;
+  }
+  .Button-sofa {
+    margin-left: 74%;
+  }
+  .info {
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .App-logo {
+    max-width: 500px !important;
+  }
 }
